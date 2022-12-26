@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(15, 52, 52);
+}
+
+
+.con-1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.con-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 70%;
+    width: 70%;
+    margin: auto;
+}
+
+
+
+.vor{
+    height: 80vh;
+    width: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    display: none;
+}
+
+
+
+.all{
+    border: 1px solid rgb(255, 254, 254);
+    border-radius:9px;
+    width: 10%;
+    height: 7vh;
+    text-align: center;
+    padding-top: 17px;
+
+
+    background-color:rgb(81, 127, 109);
+    color: rgb(255, 255, 255);
+
+    animation-name: frenzy;
+}
+
+.bot{
+    display: flex;
+    /* justify-content: center;*/
+    align-items: center;
+    position: absolute;
+    left: 1050px;
+    top: 600px;
+}
+
+.but{
+    border-radius: 9px;
+    border-width: 1px;
+    border-color: white;
+    box-shadow: none;
+    background-color: rgb(81, 127, 109);
+}
+
+button{
+    /* padding: 3rem; */
+    width: 15rem;
+    height: 9vh;
+}
+
+
+.all:hover{
+    background-color: rgb(13, 13, 13);
+    color: rgb(255, 255, 255);
+
+    transition: .5s;
+}
+
+button:hover{
+    background-color: black;
+    transition: 1s;
+    color: white;
+}
+
+.wave{
+    font-size: 200px;
+}
+
+.iam{
+    font-size: 100px;
+
+    position: absolute;
+    left: 300px;
+    top: 170px;
+    display: none;
+
+}
+
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
