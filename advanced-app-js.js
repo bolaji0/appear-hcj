@@ -11,7 +11,7 @@ const all = document.querySelectorAll('.all');
 
 
 btn.addEventListener('click', ()=>{
-    container.style.display = 'block'
+    container.style.display = 'block';
  })
 
 // bi.addEventListener('click', ()=>{
@@ -43,8 +43,8 @@ btn.addEventListener('click', ()=>{
 
     all.forEach((i)=>{
         i.addEventListener('click', ()=>{
-            iam.style.display = 'block'
-            container.style.display = 'none'
+            iam.style.display = 'block';
+            container.style.display = 'none':
         })
     })
 
